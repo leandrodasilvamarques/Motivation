@@ -20,7 +20,7 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:src="@drawable/skills"/>
+            android:src="@drawable/ic_skills"/>
 
         <ImageView
             android:id="@+id/image_porco"
@@ -28,7 +28,7 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:src="@drawable/pig"/>
+            android:src="@drawable/ic_pig"/>
 
         <ImageView
             android:id="@+id/image_presente"
@@ -36,9 +36,7 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:src="@drawable/surprise"/>
+            android:src="@drawable/ic_surprise"/>
     </LinearLayout>
-
-
 
 </RelativeLayout>
