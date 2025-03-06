@@ -38,6 +38,7 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/text_nome"
         android:layout_below="@+id/linear_opcoes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

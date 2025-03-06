@@ -15,10 +15,18 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setNome()
         binding.buttonNovaFrase.setOnClickListener(this)
         }
 
     override fun onClick(v: View) {
-        TODO("Not yet implemented")
+        if (v.id == R.id.button_nova_frase){
+
+        }
+    }
+
+    private fun setNome(){
+        val nome = SecurityPreferences(this).getNome("NOME_DO_USUARIO")
+        binding.textNome.text = "Olá, $nome!"
     }
 }

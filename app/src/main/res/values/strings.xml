@@ -3,8 +3,9 @@
     <string name="nova_frase">nova frase</string>
     <string name="ola_kotlin">Olá, Kotlin</string>
     <string name="ola_user">Olá, User!</string>
-
     <!--User-->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
     <string name="qual_seu_nome">Qual seu nome?</string>
     <string name="salvar">salvar</string>
     <string name="vamos_comecar">Vamos começar?</string>
