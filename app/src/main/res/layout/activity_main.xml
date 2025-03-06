@@ -1,42 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_all"
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_alignParentBottom="true"
+        android:id="@+id/linear_opcoes"
         android:layout_width="match_parent"
         android:layout_height="64dp"
         android:orientation="horizontal"
-        android:background="#768017">
+        android:background="@color/buttons">
 
         <ImageView
             android:id="@+id/image_lista"
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
             android:layout_gravity="center"
-            android:src="@drawable/ic_skills"/>
+            android:src="@drawable/ic_all"/>
 
         <ImageView
             android:id="@+id/image_porco"
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
             android:layout_gravity="center"
-            android:src="@drawable/ic_pig"/>
+            android:src="@drawable/ic_sunn"/>
 
         <ImageView
             android:id="@+id/image_presente"
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
             android:layout_gravity="center"
-            android:src="@drawable/ic_surprise"/>
+            android:src="@drawable/ic_happy"/>
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_frases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="32dp"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="@string/riscos_devem_ser_corridos_porque_o_maior_perigo_e_nao_arriscar_nada"
+        android:layout_centerInParent="true"/>
+
+    <View
+        android:id="@+id/view_traco"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/texts"
+        android:layout_marginHorizontal="128dp"
+        android:layout_below="@+id/text_frases"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nova_frase"
+        android:textAllCaps="true"
+        android:layout_below="@+id/view_traco"
+        android:layout_marginTop="128dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/texts"
+        android:backgroundTint="@color/buttons"/>
+
 
 </RelativeLayout>
