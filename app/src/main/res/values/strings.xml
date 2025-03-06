@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Motivation</string>
-    <string name="riscos_devem_ser_corridos_porque_o_maior_perigo_e_nao_arriscar_nada">Riscos devem ser corridos, porque o maior perigo é não arriscar nada!</string>
     <string name="nova_frase">nova frase</string>
+    <string name="ola_kotlin">Olá, Kotlin</string>
+    <string name="ola_user">Olá, User!</string>
 </resources>

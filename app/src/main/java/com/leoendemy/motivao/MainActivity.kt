@@ -15,10 +15,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
+        binding.buttonNovaFrase.setOnClickListener(this)
         }
 
-    override fun onClick(v: View?) {
+    override fun onClick(v: View) {
         TODO("Not yet implemented")
     }
 }
