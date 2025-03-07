@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_all"
-    tools:context=".MainActivity">
+    tools:context=".activitys.MainActivity">
 
     <LinearLayout
         android:id="@+id/linear_opcoes"
@@ -14,7 +14,7 @@
         android:background="@color/buttons">
 
         <ImageView
-            android:id="@+id/image_all"
+            android:id="@+id/image_infinito"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="40dp"
@@ -22,7 +22,7 @@
             android:src="@drawable/ic_all"/>
 
         <ImageView
-            android:id="@+id/image_sunn"
+            android:id="@+id/image_sol"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="40dp"
@@ -30,11 +30,13 @@
             android:src="@drawable/ic_sunn"/>
 
         <ImageView
+            android:id="@+id/image_feliz"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
             android:src="@drawable/ic_happy"/>
+
     </LinearLayout>
 
     <TextView

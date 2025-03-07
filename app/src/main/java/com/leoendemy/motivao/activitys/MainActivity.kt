@@ -1,11 +1,11 @@
-package com.leoendemy.motivao
+package com.leoendemy.motivao.activitys
 
 import android.os.Bundle
 import android.view.View
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.leoendemy.motivao.Keys
+import com.leoendemy.motivao.R
+import com.leoendemy.motivao.SecurityPreferences
 import com.leoendemy.motivao.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -17,16 +17,26 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         setNome()
         binding.buttonNovaFrase.setOnClickListener(this)
+        binding.imageInfinito.setOnClickListener(this)
+        binding.imageSol.setOnClickListener(this)
+        binding.imageFeliz.setOnClickListener(this)
         }
 
-    override fun onClick(v: View) {
-        if (v.id == R.id.button_nova_frase){
+    override fun onClick(click: View) {
+        if (click.id == R.id.button_nova_frase){
+            TODO()
+        }else if(click.id == R.id.image_infinito){
+
+        }else if(click.id == R.id.image_sol){
+
+        }else if (click.id == R.id.image_feliz){
 
         }
+
     }
 
     private fun setNome(){
-        val nome = SecurityPreferences(this).getNome("NOME_DO_USUARIO")
+        val nome = SecurityPreferences(this).getNome(Keys.KEY.USER_NAME)
         binding.textNome.text = "Olá, $nome!"
     }
 }
