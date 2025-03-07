@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="texts">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
     <color name="buttons">#768017</color>
     <color name="background_all">#81939B81</color>
+    <color name="buttons_select">#FFF</color>
 </resources>

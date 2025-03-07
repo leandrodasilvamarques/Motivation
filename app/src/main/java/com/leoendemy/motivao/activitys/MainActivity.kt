@@ -3,6 +3,7 @@ package com.leoendemy.motivao.activitys
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import com.leoendemy.motivao.Keys
 import com.leoendemy.motivao.R
 import com.leoendemy.motivao.SecurityPreferences
@@ -24,15 +25,18 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(click: View) {
         if (click.id == R.id.button_nova_frase){
-            TODO()
-        }else if(click.id == R.id.image_infinito){
 
-        }else if(click.id == R.id.image_sol){
+        } else if (click.id in listOf(R.id.image_infinito, R.id.image_sol, R.id.image_feliz)) botaoClicado(click.id)
+    }
 
-        }else if (click.id == R.id.image_feliz){
-
+    fun botaoClicado(id: Int){
+        if(id == R.id.image_infinito){
+            binding.imageInfinito.setColorFilter(ContextCompat.getColor(this, R.color.buttons_select))
+        }else if(id == R.id.image_sol){
+            binding.imageSol.setColorFilter((ContextCompat.getColor(this, R.color.buttons_select)))
+        }else if (id == R.id.image_feliz){
+            binding.imageFeliz.setColorFilter(ContextCompat.getColor(this, R.color.buttons_select))
         }
-
     }
 
     private fun setNome(){
