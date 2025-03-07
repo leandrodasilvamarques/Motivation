@@ -7,7 +7,7 @@
     tools:context=".activitys.MainActivity">
 
     <LinearLayout
-        android:id="@+id/linear_opcoes"
+        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="64dp"
         android:orientation="horizontal"
@@ -41,7 +41,7 @@
 
     <TextView
         android:id="@+id/text_nome"
-        android:layout_below="@+id/linear_opcoes"
+        android:layout_marginTop="32dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="32dp"

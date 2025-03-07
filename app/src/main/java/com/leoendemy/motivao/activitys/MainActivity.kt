@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(binding.root)
 
         setNome()
+        botaoClicado(R.id.image_infinito)
         binding.buttonNovaFrase.setOnClickListener(this)
         binding.imageInfinito.setOnClickListener(this)
         binding.imageSol.setOnClickListener(this)
@@ -30,12 +31,20 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     fun botaoClicado(id: Int){
-        if(id == R.id.image_infinito){
-            binding.imageInfinito.setColorFilter(ContextCompat.getColor(this, R.color.buttons_select))
-        }else if(id == R.id.image_sol){
-            binding.imageSol.setColorFilter((ContextCompat.getColor(this, R.color.buttons_select)))
-        }else if (id == R.id.image_feliz){
-            binding.imageFeliz.setColorFilter(ContextCompat.getColor(this, R.color.buttons_select))
+        binding.imageInfinito.setColorFilter(ContextCompat.getColor(this, R.color.texts))
+        binding.imageSol.setColorFilter((ContextCompat.getColor(this, R.color.texts)))
+        binding.imageFeliz.setColorFilter(ContextCompat.getColor(this, R.color.texts))
+
+        when (id) {
+            R.id.image_infinito -> {
+                binding.imageInfinito.setColorFilter(ContextCompat.getColor(this, R.color.buttons_select))
+            }
+            R.id.image_sol -> {
+                binding.imageSol.setColorFilter((ContextCompat.getColor(this, R.color.buttons_select)))
+            }
+            R.id.image_feliz -> {
+                binding.imageFeliz.setColorFilter(ContextCompat.getColor(this, R.color.buttons_select))
+            }
         }
     }
 
