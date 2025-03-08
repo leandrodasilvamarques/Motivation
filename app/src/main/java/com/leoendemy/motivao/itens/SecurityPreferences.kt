@@ -1,4 +1,4 @@
-package com.leoendemy.motivao
+package com.leoendemy.motivao.itens
 
 import android.content.Context
 import android.content.SharedPreferences

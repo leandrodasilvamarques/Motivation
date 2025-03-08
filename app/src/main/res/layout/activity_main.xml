@@ -7,6 +7,7 @@
     tools:context=".activitys.MainActivity">
 
     <LinearLayout
+        android:id="@+id/linear_botoes"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="64dp"
@@ -14,28 +15,28 @@
         android:background="@color/buttons">
 
         <ImageView
-            android:id="@+id/image_infinito"
+            android:id="@+id/image_ansiedade"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
-            android:src="@drawable/ic_all"/>
+            android:src="@drawable/ic_ansiedade"/>
 
         <ImageView
-            android:id="@+id/image_sol"
+            android:id="@+id/image_sabedoria"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
-            android:src="@drawable/ic_sunn"/>
+            android:src="@drawable/ic_sabedoria"/>
 
         <ImageView
-            android:id="@+id/image_feliz"
+            android:id="@+id/image_amor"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
-            android:src="@drawable/ic_happy"/>
+            android:src="@drawable/ic_amor"/>
 
     </LinearLayout>
 
@@ -46,6 +47,7 @@
         android:layout_height="wrap_content"
         android:padding="32dp"
         android:fontFamily="@font/cabin"
+        android:textColor="@color/texts"
         android:textSize="22sp"
         android:gravity="center"
         android:layout_centerHorizontal="true"
@@ -57,8 +59,9 @@
         android:layout_height="wrap_content"
         android:padding="32dp"
         android:textSize="22sp"
+        android:textColor="@color/texts"
         android:gravity="center"
-        android:hint="Motivation"
+        android:hint="Versiculo"
         android:layout_centerInParent="true"/>
 
     <View
@@ -74,9 +77,9 @@
         android:id="@+id/button_nova_frase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/view_traco"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="128dp"
+        android:layout_marginBottom="128dp"
         android:backgroundTint="@color/buttons"
         android:fontFamily="@font/cabin"
         android:text="@string/nova_frase"

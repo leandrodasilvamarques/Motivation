@@ -4,9 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.leoendemy.motivao.Keys
+import com.leoendemy.motivao.itens.Keys
 import com.leoendemy.motivao.R
-import com.leoendemy.motivao.SecurityPreferences
+import com.leoendemy.motivao.itens.SecurityPreferences
 import com.leoendemy.motivao.databinding.ActivityUserBinding
 
 class UserActivity : AppCompatActivity(), View.OnClickListener {

@@ -2,16 +2,19 @@ package com.leoendemy.motivao.activitys
 
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import com.leoendemy.motivao.Keys
+import com.leoendemy.motivao.itens.Keys
 import com.leoendemy.motivao.R
-import com.leoendemy.motivao.SecurityPreferences
+import com.leoendemy.motivao.dados.Frase
+import com.leoendemy.motivao.dados.Mock
+import com.leoendemy.motivao.itens.SecurityPreferences
 import com.leoendemy.motivao.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityMainBinding
-    private var botaoSelecionadoId = 0
+    private var botaoSelecionadoId = Keys.VALOR_DOS_BOTOES.INICIAL
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,60 +22,75 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(binding.root)
 
         setNome()
-        botaoClicado(R.id.image_infinito)
         binding.buttonNovaFrase.setOnClickListener(this)
-        binding.imageInfinito.setOnClickListener(this)
-        binding.imageSol.setOnClickListener(this)
-        binding.imageFeliz.setOnClickListener(this)
+        binding.imageAnsiedade.setOnClickListener(this)
+        binding.imageSabedoria.setOnClickListener(this)
+        binding.imageAmor.setOnClickListener(this)
     }
 
     override fun onClick(click: View) {
         if (click.id == R.id.button_nova_frase) {
-
+            exibirFrase()
         } else if (click.id in listOf(
-                R.id.image_infinito,
-                R.id.image_sol,
-                R.id.image_feliz
+                R.id.image_ansiedade,
+                R.id.image_sabedoria,
+                R.id.image_amor
             )
         ) botaoClicado(click.id)
     }
 
+    fun exibirFrase() {
+        if (botaoSelecionadoId != Keys.VALOR_DOS_BOTOES.INICIAL) binding.textFrases.text = Mock().getFrase(botaoSelecionadoId)
+        else exibirMensagemFlutuante()
+    }
+
     fun botaoClicado(id: Int) {
-        binding.imageInfinito.setColorFilter(ContextCompat.getColor(this, R.color.texts))
-        binding.imageSol.setColorFilter((ContextCompat.getColor(this, R.color.texts)))
-        binding.imageFeliz.setColorFilter(ContextCompat.getColor(this, R.color.texts))
+        binding.imageAnsiedade.setColorFilter(ContextCompat.getColor(this, R.color.texts))
+        binding.imageSabedoria.setColorFilter((ContextCompat.getColor(this, R.color.texts)))
+        binding.imageAmor.setColorFilter(ContextCompat.getColor(this, R.color.texts))
 
         when (id) {
-            R.id.image_infinito -> {
-                binding.imageInfinito.setColorFilter(
+            R.id.image_ansiedade -> {
+                binding.imageAnsiedade.setColorFilter(
                     ContextCompat.getColor(
                         this,
                         R.color.buttons_select
                     )
                 )
-                botaoSelecionadoId = Keys.VALOR_DOS_BOTOES.INFINITO
+                botaoSelecionadoId = Keys.VALOR_DOS_BOTOES.ANSIEDADE
+                Toast.makeText(this, "Ansiedade", Toast.LENGTH_SHORT).show()
             }
 
-            R.id.image_sol -> {
-                binding.imageSol.setColorFilter(
+            R.id.image_sabedoria -> {
+                binding.imageSabedoria.setColorFilter(
                     (ContextCompat.getColor(
                         this,
                         R.color.buttons_select
                     ))
                 )
-                botaoSelecionadoId = Keys.VALOR_DOS_BOTOES.SOL
+                botaoSelecionadoId = Keys.VALOR_DOS_BOTOES.SABEDORIA
+                Toast.makeText(this, "Sabedoria", Toast.LENGTH_SHORT).show()
             }
 
-            R.id.image_feliz -> {
-                binding.imageFeliz.setColorFilter(
+            R.id.image_amor -> {
+                binding.imageAmor.setColorFilter(
                     ContextCompat.getColor(
                         this,
                         R.color.buttons_select
                     )
                 )
-                botaoSelecionadoId = Keys.VALOR_DOS_BOTOES.FELIZ
+                botaoSelecionadoId = Keys.VALOR_DOS_BOTOES.AMOR
+                Toast.makeText(this, "Amor", Toast.LENGTH_SHORT).show()
             }
         }
+    }
+
+    fun exibirMensagemFlutuante() {
+        Toast.makeText(
+            this,
+            "Selecione o tipo de versiculo que deseja ler abaixo!",
+            Toast.LENGTH_SHORT
+        ).show()
     }
 
     private fun setNome() {
