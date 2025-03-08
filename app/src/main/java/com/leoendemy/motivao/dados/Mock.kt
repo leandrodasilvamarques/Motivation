@@ -48,7 +48,7 @@ class Mock {
             ansiedade
         ),
         Frase(
-            "Ageu 2:Minha é a prata, e meu é o ouro, disse o Senhor dos Exércitos. Ageu 2:8",
+            "Minha é a prata, e meu é o ouro, disse o Senhor dos Exércitos. Ageu 2:8",
             ansiedade
         ),
         Frase(
