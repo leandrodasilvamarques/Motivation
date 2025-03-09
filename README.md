@@ -16,7 +16,7 @@ O ícone do aplicativo **PeaceGod** é composto por uma cesta com peixes, simbol
 
 ## Tela de Boas-Vindas
 
-<img src="https://github.com/user-attachments/assets/6a7be971-c1ed-458e-8ad9-46e79c96d7c1" width="300" />
+<img src="https://github.com/user-attachments/assets/6a7be971-c1ed-458e-8ad9-46e79c96d7c1" width="200" />
 
 ### **Descrição**
 
@@ -31,7 +31,7 @@ Ao abrir o aplicativo, o usuário verá uma tela inicial com a mensagem:
 
 ## Validação de Campos
 
-<img src="https://github.com/user-attachments/assets/7aab8f2a-761b-408d-805a-2a18f376ced5" width="300" />
+<img src="https://github.com/user-attachments/assets/7aab8f2a-761b-408d-805a-2a18f376ced5" width="200" />
 
 ### **Descrição**
 
@@ -45,7 +45,7 @@ Isso garante que o usuário não avance sem fornecer as informações necessári
 
 ## Tela Principal - Exibição dos Versículos
 
-<img src="https://github.com/user-attachments/assets/fc4a250b-e257-45bb-9a98-1ee45bd6f7d7" width="300" />
+<img src="https://github.com/user-attachments/assets/fc4a250b-e257-45bb-9a98-1ee45bd6f7d7" width="200" />
 
 ### **Descrição**
 
@@ -63,7 +63,7 @@ Após inserir o nome, o usuário será direcionado à tela principal, onde o ver
 
 ## Tela de Erro - Caso o conteúdo desejado dos versiculos não seja selecionado
 
-<img src="https://github.com/user-attachments/assets/47d1bd8b-674e-45bb-901e-13c08700ed40" width="300" />
+<img src="https://github.com/user-attachments/assets/47d1bd8b-674e-45bb-901e-13c08700ed40" width="200" />
 
 ### **Descrição**
 
@@ -77,9 +77,9 @@ Isso garante que a experiência do aplicativo seja personalizada e o usuário te
 
 ## Tela de Versículo com Sugestões
 
-<img src="https://github.com/user-attachments/assets/9fbea383-c3e4-4def-aed6-18772746495a" width="300" />
-<img src="https://github.com/user-attachments/assets/fbfdecc6-26e3-4c9a-9aeb-c6279921db6e" width="300" />
-<img src="https://github.com/user-attachments/assets/16ec0295-8f0e-48cc-96dd-1f719b26c0ff" width="300" />
+<img src="https://github.com/user-attachments/assets/9fbea383-c3e4-4def-aed6-18772746495a" width="200" />
+<img src="https://github.com/user-attachments/assets/fbfdecc6-26e3-4c9a-9aeb-c6279921db6e" width="200" />
+<img src="https://github.com/user-attachments/assets/16ec0295-8f0e-48cc-96dd-1f719b26c0ff" width="200" />
 
 ### **Descrição**
 
