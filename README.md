@@ -16,7 +16,7 @@ O ícone do aplicativo **PeaceGod** é composto por uma cesta com peixes, simbol
 
 ## Tela de Boas-Vindas
 
-<img src="https://github.com/user-attachments/assets/a0b31e44-4f74-4965-bef5-229f58242940" width="300" />
+<img src="https://github.com/user-attachments/assets/6a7be971-c1ed-458e-8ad9-46e79c96d7c1" width="300" />
 
 ### **Descrição**
 
@@ -31,7 +31,7 @@ Ao abrir o aplicativo, o usuário verá uma tela inicial com a mensagem:
 
 ## Validação de Campos
 
-<img src="https://github.com/user-attachments/assets/e1e77a48-df11-4470-9c02-196fc2efb15e" width="300" />
+<img src="https://github.com/user-attachments/assets/7aab8f2a-761b-408d-805a-2a18f376ced5" width="300" />
 
 ### **Descrição**
 
@@ -45,7 +45,7 @@ Isso garante que o usuário não avance sem fornecer as informações necessári
 
 ## Tela Principal - Exibição dos Versículos
 
-<img src="https://github.com/user-attachments/assets/4bc8c06b-5241-4196-8aac-22024ec5b657" width="300" />
+<img src="https://github.com/user-attachments/assets/fc4a250b-e257-45bb-9a98-1ee45bd6f7d7" width="300" />
 
 ### **Descrição**
 
@@ -61,15 +61,15 @@ Após inserir o nome, o usuário será direcionado à tela principal, onde o ver
 
 ---
 
-## Tela de Erro - Caso o Nome Não Seja Inserido
+## Tela de Erro - Caso o conteúdo desejado dos versiculos não seja selecionado
 
-<img src="https://github.com/user-attachments/assets/79a8b67d-55ae-4b93-a440-d61f48b0284d" width="300" />
+<img src="https://github.com/user-attachments/assets/47d1bd8b-674e-45bb-901e-13c08700ed40" width="300" />
 
 ### **Descrição**
 
 Se o usuário não preencher o campo do nome, o aplicativo exibirá o seguinte erro:
 
-**Mensagem de erro**: “**Digite um nome!**”
+**Mensagem de erro**: “**Digite o tipo de versiculo que deseja ler abaixo!**”
 
 Isso garante que a experiência do aplicativo seja personalizada e o usuário tenha acesso completo às funcionalidades.
 
@@ -77,7 +77,9 @@ Isso garante que a experiência do aplicativo seja personalizada e o usuário te
 
 ## Tela de Versículo com Sugestões
 
-<img src="https://github.com/user-attachments/assets/162fe594-f658-4b1d-a6fc-2f3ff7ec4304" width="300" />
+<img src="https://github.com/user-attachments/assets/9fbea383-c3e4-4def-aed6-18772746495a" width="300" />
+<img src="https://github.com/user-attachments/assets/fbfdecc6-26e3-4c9a-9aeb-c6279921db6e" width="300" />
+<img src="https://github.com/user-attachments/assets/16ec0295-8f0e-48cc-96dd-1f719b26c0ff" width="300" />
 
 ### **Descrição**
 
@@ -113,11 +115,9 @@ O usuário pode tocar no botão para selecionar o tipo de versículo que deseja 
 
 1. **Insira seu Nome**: Ao abrir o aplicativo, insira seu nome para personalizar a experiência.
 2. **Clique em "SALVAR"**: Após inserir seu nome, clique em "SALVAR" para avançar para a tela de versículos.
-3. **Veja o Versículo**: O aplicativo exibirá um versículo aleatório, e você pode clicar em **"Nova Frase"** para obter outro versículo.
-4. **Escolha o Tema**: Se desejar, selecione o tipo de versículo que deseja ler (ex.: Ansiedade, Sabedoria, Amor).
+3. **Escolha o Tema**: Se desejar, selecione o tipo de versículo que deseja ler (ex.: Ansiedade, Sabedoria, Amor).
+4. **Veja o Versículo**: O aplicativo exibirá um versículo aleatório, e você pode clicar em **"Nova Frase"** para obter outro versículo.
 
 ---
 
 Este **README.md** organiza o funcionamento do aplicativo de forma clara e profissional, destacando as imagens do app para melhor entendimento. Além disso, explica como o usuário interage com o app, suas funcionalidades e tecnologias usadas.
-
-Se precisar de mais ajustes, é só avisar!
