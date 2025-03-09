@@ -8,7 +8,7 @@ Este README contém uma explicação detalhada sobre como o aplicativo funciona,
 
 ## Ícone do Aplicativo
 
-![Ícone do PeaceGod](https://github.com/user-attachments/assets/09e1d3f3-fec0-4c47-bb56-12812c6d431f)
+![Ícone do PeaceGod](https://github.com/user-attachments/assets/d2864398-23e5-4fc6-a89b-7b49dcccab5f)
 
 O ícone do aplicativo **PeaceGod** é composto por uma cesta com peixes, simbolizando a providência divina e a paz espiritual que o aplicativo busca transmitir aos seus usuários.
 
