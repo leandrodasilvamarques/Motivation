@@ -71,4 +71,53 @@ Se o usuário não preencher o campo do nome, o aplicativo exibirá o seguinte e
 
 **Mensagem de erro**: “**Digite um nome!**”
 
-Isso garante que a experiência do aplicativo seja personalizada e o usuário tenha a
+Isso garante que a experiência do aplicativo seja personalizada e o usuário tenha acesso completo às funcionalidades.
+
+---
+
+## Tela de Versículo com Sugestões
+
+<img src="https://github.com/user-attachments/assets/162fe594-f658-4b1d-a6fc-2f3ff7ec4304" width="300" />
+
+### **Descrição**
+
+Na tela principal, após o usuário inserir seu nome, o aplicativo oferece diferentes versículos que podem ser relacionados aos sentimentos e necessidades do usuário. O aplicativo proporciona versículos relacionados a tópicos como:
+
+- **Ansiedade**
+- **Amor**
+- **Sabedoria**
+
+O usuário pode tocar no botão para selecionar o tipo de versículo que deseja ler, ajudando na personalização da experiência.
+
+---
+
+## Funcionalidades
+
+- **Armazenamento de Nome no Cache**: O nome do usuário é salvo no cache do dispositivo, o que permite que o aplicativo personalize a experiência e evite a necessidade de digitar o nome toda vez que o usuário abrir o aplicativo.
+- **Versículos Aleatórios**: O aplicativo oferece versículos aleatórios que são atualizados sempre que o usuário clica no botão **"Nova Frase"**.
+- **Mensagens Personalizadas**: O nome do usuário é inserido na saudação para tornar a experiência mais pessoal e acolhedora.
+- **Seleção de Tipos de Versículo**: O usuário pode escolher um tema para o versículo (ex.: Ansiedade, Sabedoria, Amor, etc.).
+
+---
+
+## Tecnologias Utilizadas
+
+- **Linguagem de Programação**: Kotlin
+- **Framework**: View Binding
+- **Armazenamento Local**: Cache no dispositivo para salvar o nome do usuário.
+- **Design Responsivo**: A interface foi desenvolvida para ser simples, intuitiva e de fácil uso, garantindo uma experiência fluida em diferentes tamanhos de tela.
+
+---
+
+## Como Usar
+
+1. **Insira seu Nome**: Ao abrir o aplicativo, insira seu nome para personalizar a experiência.
+2. **Clique em "SALVAR"**: Após inserir seu nome, clique em "SALVAR" para avançar para a tela de versículos.
+3. **Veja o Versículo**: O aplicativo exibirá um versículo aleatório, e você pode clicar em **"Nova Frase"** para obter outro versículo.
+4. **Escolha o Tema**: Se desejar, selecione o tipo de versículo que deseja ler (ex.: Ansiedade, Sabedoria, Amor).
+
+---
+
+Este **README.md** organiza o funcionamento do aplicativo de forma clara e profissional, destacando as imagens do app para melhor entendimento. Além disso, explica como o usuário interage com o app, suas funcionalidades e tecnologias usadas.
+
+Se precisar de mais ajustes, é só avisar!
